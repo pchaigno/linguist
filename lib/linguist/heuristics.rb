@@ -78,8 +78,11 @@ module Linguist
 
     def self.disambiguate_r(data, languages)
       matches = []
-      matches << Language["Rebol"] if /\bRebol\b/i.match(data)
-      matches << Language["R"] if data.include?("<-")
+      if (/\bRebol\b/i.match(data))
+        matches << Language["Rebol"]
+      else
+        matches << Language["R"]
+      end
       matches
     end
 

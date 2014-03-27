@@ -62,6 +62,18 @@ class TestHeuristcs < Test::Unit::TestCase
     results = Heuristics.disambiguate_ecl(fixture("ECL/sample.ecl"), languages)
     assert_equal Language["ECL"], results.first
   end
+  
+  def test_r_r_by_heuristics
+    languages = ["R", "Rebol"]
+    results = Heuristics.disambiguate_r(fixture("R/hello.r"), languages)
+    assert_equal Language["R"], results.first
+  end
+  
+  def test_r_rebol_by_heuristics
+    languages = ["R", "Rebol"]
+    results = Heuristics.disambiguate_r(fixture("Rebol/booters.r"), languages)
+    assert_equal Language["Rebol"], results.first
+  end
 
   def test_ts_typescript_by_heuristics
     languages = ["TypeScript", "XML"]
