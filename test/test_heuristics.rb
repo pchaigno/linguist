@@ -62,6 +62,18 @@ class TestHeuristcs < Test::Unit::TestCase
     results = Heuristics.disambiguate_ecl(fixture("ECL/sample.ecl"), languages)
     assert_equal Language["ECL"], results.first
   end
+  
+  def test_sc_scala_by_heuristics
+    languages = ["Scala", "SuperCollider"]
+    results = Heuristics.disambiguate_sc(fixture("Scala/node11.sc"), languages)
+    assert_equal Language["Scala"], results.first
+  end
+  
+  def test_sc_supercollider_by_heuristics
+    languages = ["Scala", "SuperCollider"]
+    results = Heuristics.disambiguate_sc(fixture("SuperCollider/MykClock.sc"), languages)
+    assert_equal Language["SuperCollider"], results.first
+  end
 
   def test_ts_typescript_by_heuristics
     languages = ["TypeScript", "XML"]

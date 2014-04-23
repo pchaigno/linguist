@@ -1,7 +1,7 @@
 module Linguist
   # A collection of simple heuristics that can be used to better analyze languages.
   class Heuristics
-    ACTIVE = false
+    ACTIVE = true
 
     # Public: Given an array of String language names,
     # apply heuristics against the given data and return an array
@@ -21,6 +21,9 @@ module Linguist
         end
         if languages.all? { |l| ["ECL", "Prolog"].include?(l) }
           disambiguate_ecl(data, languages)
+        end
+        if languages.all? { |l| ["Scala", "SuperCollider"].include?(l) }
+          disambiguate_sc(data, languages)
         end
         if languages.all? { |l| ["TypeScript", "XML"].include?(l) }
           disambiguate_ts(data, languages)
@@ -56,6 +59,13 @@ module Linguist
       matches = []
       matches << Language["Prolog"] if data.include?(":-")
       matches << Language["ECL"] if data.include?(":=")
+      matches
+    end
+
+    def self.disambiguate_sc(data, languages)
+      matches = []
+      matches << Language["Scala"] if data.include?("object ")
+      matches << Language["SuperCollider"] if data.include?("var ")
       matches
     end
 
