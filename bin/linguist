@@ -3,6 +3,14 @@
 # linguist — detect language type for a file, or, given a directory, determine language breakdown
 #     usage: linguist <path> [<--breakdown>]
 
+unless File.exist?('lib/linguist/samples.json')
+  require 'linguist/samples'
+  require 'yajl'
+  data = Linguist::Samples.data
+  json = Yajl::Encoder.encode(data, :pretty => true)
+  File.open('lib/linguist/samples.json', 'w') { |io| io.write json }
+end
+
 require 'linguist/file_blob'
 require 'linguist/language'
 require 'linguist/repository'
