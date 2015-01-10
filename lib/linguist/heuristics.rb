@@ -16,8 +16,9 @@ module Linguist
     def self.call(blob, languages)
       data = blob.data
 
-      @heuristics.each do |heuristic|
-        return Array(heuristic.call(data)) if heuristic.matches?(languages)
+      best_heuristic = @heuristics.max { |h1, h2| h1.match_degree(languages) <=> h2.match_degree(languages) }
+      if best_heuristic.match_degree(languages) > 1
+        return Array(best_heuristic.call(data))
       end
 
       [] # No heuristics matched
@@ -52,8 +53,8 @@ module Linguist
     end
 
     # Internal: Check if this heuristic matches the candidate languages.
-    def matches?(candidates)
-      candidates.any? && candidates.all? { |l| @languages.include?(l.name) }
+    def match_degree(candidates)
+      candidates.count { |l| @languages.include?(l.name) }
     end
 
     # Internal: Perform the heuristic
@@ -99,6 +100,16 @@ module Linguist
     disambiguate "IDL", "Prolog" do |data|
       if data.include?(":-")
         Language["Prolog"]
+      else
+        Language["IDL"]
+      end
+    end
+
+    disambiguate "IDL", "Prolog", "QMake" do |data|
+      if data.include?(":-")
+        Language["Prolog"]
+      elsif data.include?("+=")
+        Language["QMake"]
       else
         Language["IDL"]
       end
