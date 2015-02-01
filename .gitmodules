@@ -561,3 +561,6 @@
 [submodule "vendor/grammars/Modelica"]
 	path = vendor/grammars/Modelica
 	url = https://github.com/BorisChumichev/modelicaSublimeTextPackage
+[submodule "vendor/grammars/gap-tmbundle"]
+	path = vendor/grammars/gap-tmbundle
+	url = https://github.com/dhowden/gap-tmbundle
