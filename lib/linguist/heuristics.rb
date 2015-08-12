@@ -358,5 +358,13 @@ module Linguist
         Language["R"]
       end
     end
+
+    disambiguate ".yml" do |data|
+      if /- (name|include|hosts): /.match(data) && (/(tags|vars|tasks):\n/.match(data) || /\b(when|with_items): /.match(data))
+        Language["Ansible"]
+      else
+        Language["YAML"]
+      end
+    end
   end
 end

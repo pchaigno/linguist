@@ -186,4 +186,11 @@ class TestHeuristcs < Minitest::Test
       "Rebol" => all_fixtures("Rebol", "*.r")
     })
   end
+
+  def test_yml_by_heuristics
+    assert_heuristics({
+      "YAML" => all_fixtures("YAML", "*.yml"),
+      "Ansible" => all_fixtures("Ansible", "*.yml")
+    })
+  end
 end

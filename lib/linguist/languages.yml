@@ -151,6 +151,8 @@ Ansible:
   color: "#64c5c7"
   tm_scope: source.ansible
   ace_mode: yaml
+  extensions:
+  - .yml
 
 Ant Build System:
   type: data
