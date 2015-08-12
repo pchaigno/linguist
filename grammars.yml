@@ -475,6 +475,9 @@ vendor/grammars/standard-ml.tmbundle:
 - source.ml
 vendor/grammars/sublime-MuPAD:
 - source.mupad
+vendor/grammars/sublime-ansible/:
+- source.ansible
+- source.jinja.ansible
 vendor/grammars/sublime-apl/:
 - source.apl
 vendor/grammars/sublime-befunge:

@@ -149,7 +149,7 @@ Alloy:
 Ansible:
   type: programming
   color: "#64c5c7"
-  tm_scope: source.yaml
+  tm_scope: source.ansible
   ace_mode: yaml
 
 Ant Build System:

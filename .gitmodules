@@ -668,3 +668,6 @@
 [submodule "vendor/grammars/vue-syntax-highlight"]
 	path = vendor/grammars/vue-syntax-highlight
 	url = https://github.com/vuejs/vue-syntax-highlight
+[submodule "vendor/grammars/sublime-ansible"]
+	path = vendor/grammars/sublime-ansible
+	url = https://github.com/pchaigno/sublime-ansible
