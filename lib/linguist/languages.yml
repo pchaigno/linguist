@@ -146,6 +146,12 @@ Alloy:
   - .als
   ace_mode: text
 
+Ansible:
+  type: programming
+  color: "#64c5c7"
+  tm_scope: source.yaml
+  ace_mode: yaml
+
 Ant Build System:
   type: data
   tm_scope: text.xml.ant
