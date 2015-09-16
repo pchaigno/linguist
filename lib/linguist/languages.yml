@@ -1228,7 +1228,7 @@ GraphQL:
   type: programming
   extensions:
   - .graphql
-  tm_scope: none
+  tm_scope: source.graphql
   ace_mode: text
 
 Graphviz (DOT):
