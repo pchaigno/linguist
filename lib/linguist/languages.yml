@@ -1230,6 +1230,7 @@ GraphQL:
   - .graphql
   tm_scope: source.graphql
   ace_mode: text
+  color: "#e535ab"
 
 Graphviz (DOT):
   type: data
