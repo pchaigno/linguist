@@ -159,7 +159,7 @@ class TestHeuristcs < Minitest::Test
   def test_pro_by_heuristics
     assert_heuristics({
       "Prolog" => all_fixtures("Prolog", "*.pro"),
-      "IDL" => all_fixtures("IDL", "*.pro"),
+      "IDL" => all_fixtures("IDL", "mg_*.pro"),
       "INI" => all_fixtures("INI", "*.pro"),
       "QMake" => all_fixtures("QMake", "*.pro")
     })
