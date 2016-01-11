@@ -306,16 +306,8 @@ module Linguist
       # Set aliases
       @aliases = [default_alias_name] + (attributes[:aliases] || [])
 
-      # Load the TextMate scope name or try to guess one
-      @tm_scope = attributes[:tm_scope] || begin
-        context = case @type
-                  when :data, :markup, :prose
-                    'text'
-                  when :programming, nil
-                    'source'
-                  end
-        "#{context}.#{@name.downcase}"
-      end
+      # Load the TextMate scope name
+      @tm_scope = attributes[:tm_scope]
 
       @ace_mode = attributes[:ace_mode]
       @wrap = attributes[:wrap] || false

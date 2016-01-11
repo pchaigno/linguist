@@ -33,6 +33,7 @@ ABAP:
   extensions:
   - .abap
   ace_mode: abap
+  tm_scope: source.abap
 
 AGS Script:
   type: programming
@@ -60,6 +61,7 @@ ANTLR:
   extensions:
   - .g4
   ace_mode: text
+  tm_scope: source.antlr
 
 API Blueprint:
   type: markup
@@ -132,6 +134,7 @@ Ada:
   - ada95
   - ada2005
   ace_mode: ada
+  tm_scope: source.ada
 
 Agda:
   type: programming
@@ -139,6 +142,7 @@ Agda:
   extensions:
   - .agda
   ace_mode: text
+  tm_scope: source.agda
 
 Alloy:
   type: programming  # 'modeling' would be more appropiate
@@ -146,6 +150,7 @@ Alloy:
   extensions:
   - .als
   ace_mode: text
+  tm_scope: source.alloy
 
 Ant Build System:
   type: data
@@ -183,6 +188,7 @@ AppleScript:
   interpreters:
   - osascript
   ace_mode: applescript
+  tm_scope: source.applescript
 
 Arc:
   type: programming
@@ -276,6 +282,7 @@ Awk:
   - mawk
   - nawk
   ace_mode: text
+  tm_scope: source.awk
 
 Batchfile:
   type: programming
@@ -296,6 +303,7 @@ Befunge:
   extensions:
   - .befunge
   ace_mode: text
+  tm_scope: source.befunge
 
 Bison:
   type: programming
@@ -333,6 +341,7 @@ BlitzMax:
   aliases:
   - bmax
   ace_mode: text
+  tm_scope: source.blitzmax
 
 Bluespec:
   type: programming
@@ -347,6 +356,7 @@ Boo:
   extensions:
   - .boo
   ace_mode: text
+  tm_scope: source.boo
 
 Brainfuck:
   type: programming
@@ -369,6 +379,7 @@ Bro:
   extensions:
   - .bro
   ace_mode: text
+  tm_scope: source.bro
 
 C:
   type: programming
@@ -382,6 +393,7 @@ C:
   interpreters:
   - tcc
   ace_mode: c_cpp
+  tm_scope: source.c
 
 C#:
   type: programming
@@ -420,6 +432,7 @@ C++:
   - .ipp
   - .tcc
   - .tpp
+  tm_scope: source.c++
 
 C-ObjDump:
   type: data
@@ -453,6 +466,7 @@ CMake:
   filenames:
   - CMakeLists.txt
   ace_mode: text
+  tm_scope: source.cmake
 
 COBOL:
   type: programming
@@ -463,6 +477,7 @@ COBOL:
   - .cobol
   - .cpy
   ace_mode: cobol
+  tm_scope: source.cobol
 
 CSS:
   type: markup
@@ -493,6 +508,7 @@ Ceylon:
   extensions:
   - .ceylon
   ace_mode: text
+  tm_scope: source.ceylon
 
 Chapel:
   type: programming
@@ -502,6 +518,7 @@ Chapel:
   extensions:
   - .chpl
   ace_mode: text
+  tm_scope: source.chapel
 
 Charity:
   type: programming
@@ -523,6 +540,7 @@ Cirru:
   ace_mode: cirru
   extensions:
   - .cirru
+  tm_scope: source.cirru
 
 Clarion:
   type: programming
@@ -565,6 +583,7 @@ Clojure:
   - .hic
   filenames:
   - riemann.config
+  tm_scope: source.clojure
 
 CoffeeScript:
   type: programming
@@ -661,6 +680,7 @@ Coq:
   - .coq
   - .v
   ace_mode: text
+  tm_scope: source.coq
 
 Cpp-ObjDump:
   type: data
@@ -727,6 +747,7 @@ Cython:
   aliases:
   - pyrex
   ace_mode: text
+  tm_scope: source.cython
 
 D:
   type: programming
@@ -735,6 +756,7 @@ D:
   - .d
   - .di
   ace_mode: d
+  tm_scope: source.d
 
 D-ObjDump:
   type: data
@@ -798,6 +820,7 @@ Dart:
   extensions:
   - .dart
   ace_mode: dart
+  tm_scope: source.dart
 
 Diff:
   type: data
@@ -836,6 +859,7 @@ Dylan:
   - .intr
   - .lid
   ace_mode: text
+  tm_scope: source.dylan
 
 E:
   type: programming
@@ -885,6 +909,7 @@ Eiffel:
   extensions:
   - .e
   ace_mode: eiffel
+  tm_scope: source.eiffel
 
 Elixir:
   type: programming
@@ -897,6 +922,7 @@ Elixir:
   - mix.lock
   interpreters:
   - elixir
+  tm_scope: source.elixir
 
 Elm:
   type: programming
@@ -946,6 +972,7 @@ Erlang:
   ace_mode: erlang
   interpreters:
   - escript
+  tm_scope: source.erlang
 
 F#:
   type: programming
@@ -993,6 +1020,7 @@ Factor:
     - .factor-boot-rc
     - .factor-rc
   ace_mode: text
+  tm_scope: source.factor
 
 Fancy:
   type: programming
@@ -1003,6 +1031,7 @@ Fancy:
   filenames:
   - Fakefile
   ace_mode: text
+  tm_scope: source.fancy
 
 Fantom:
   type: programming
@@ -1041,6 +1070,7 @@ Forth:
   - .frt
   - .fs
   ace_mode: forth
+  tm_scope: source.forth
 
 FreeMarker:
   type: programming
@@ -1121,6 +1151,7 @@ GLSL:
   - .vrx
   - .vshader
   ace_mode: glsl
+  tm_scope: source.glsl
 
 Game Maker Language:
   type: programming
@@ -1188,6 +1219,7 @@ Gnuplot:
   interpreters:
   - gnuplot
   ace_mode: text
+  tm_scope: source.gnuplot
 
 Go:
   type: programming
@@ -1195,6 +1227,7 @@ Go:
   extensions:
   - .go
   ace_mode: golang
+  tm_scope: source.go
 
 Golo:
   type: programming
@@ -1297,6 +1330,7 @@ Groovy:
   - .gvy
   interpreters:
   - groovy
+  tm_scope: source.groovy
 
 Groovy Server Pages:
   type: programming
@@ -1398,6 +1432,7 @@ Haml:
   - .haml
   - .haml.deface
   ace_mode: haml
+  tm_scope: text.haml
 
 Handlebars:
   type: markup
@@ -1427,6 +1462,7 @@ Haskell:
   - .hs
   - .hsc
   ace_mode: haskell
+  tm_scope: source.haskell
 
 Haxe:
   type: programming
@@ -1461,6 +1497,7 @@ IDL:
   - .pro
   - .dlm
   ace_mode: text
+  tm_scope: source.idl
 
 IGOR Pro:
   type: programming
@@ -1503,6 +1540,7 @@ Idris:
   - .idr
   - .lidr
   ace_mode: text
+  tm_scope: source.idris
 
 Inform 7:
   type: programming
@@ -1529,6 +1567,7 @@ Io:
   extensions:
   - .io
   ace_mode: io
+  tm_scope: source.io
 
 Ioke:
   type: programming
@@ -1538,6 +1577,7 @@ Ioke:
   interpreters:
   - ioke
   ace_mode: text
+  tm_scope: source.ioke
 
 Isabelle:
   type: programming
@@ -1640,6 +1680,7 @@ Java:
   color: "#b07219"
   extensions:
   - .java
+  tm_scope: source.java
 
 Java Server Pages:
   type: programming
@@ -1703,6 +1744,7 @@ Julia:
   - .jl
   color: "#a270ba"
   ace_mode: julia
+  tm_scope: source.julia
 
 Jupyter Notebook:
   type: markup
@@ -1764,6 +1806,7 @@ LLVM:
   extensions:
   - .ll
   ace_mode: text
+  tm_scope: source.llvm
 
 LOLCODE:
   type: programming
@@ -1782,6 +1825,7 @@ LSL:
   interpreters:
   - lsl
   color: '#3d9970'
+  tm_scope: source.lsl
 
 LabVIEW:
   type: programming
@@ -1819,6 +1863,7 @@ Lean:
   - .lean
   - .hlean
   ace_mode: lean
+  tm_scope: source.lean
 
 Less:
   type: markup
@@ -1845,6 +1890,7 @@ LilyPond:
   - .ly
   - .ily
   ace_mode: text
+  tm_scope: source.lilypond
 
 Limbo:
   type: programming
@@ -1923,6 +1969,7 @@ LiveScript:
   filenames:
   - Slakefile
   ace_mode: livescript
+  tm_scope: source.livescript
 
 Logos:
   type: programming
@@ -1931,6 +1978,7 @@ Logos:
   - .x
   - .xi
   ace_mode: text
+  tm_scope: source.logos
 
 Logtalk:
   type: programming
@@ -1938,6 +1986,7 @@ Logtalk:
   - .lgt
   - .logtalk
   ace_mode: text
+  tm_scope: source.logtalk
 
 LookML:
   type: programming
@@ -1967,6 +2016,7 @@ Lua:
   - .wlua
   interpreters:
   - lua
+  tm_scope: source.lua
 
 M:
   type: programming
@@ -2024,6 +2074,7 @@ Makefile:
   interpreters:
   - make
   ace_mode: makefile
+  tm_scope: source.makefile
 
 Mako:
   type: programming
@@ -2069,6 +2120,7 @@ Mathematica:
   aliases:
   - mma
   ace_mode: text
+  tm_scope: source.mathematica
 
 Matlab:
   type: programming
@@ -2079,6 +2131,7 @@ Matlab:
   - .matlab
   - .m
   ace_mode: matlab
+  tm_scope: source.matlab
 
 Maven POM:
   type: data
@@ -2182,6 +2235,7 @@ Monkey:
   extensions:
   - .monkey
   ace_mode: text
+  tm_scope: source.monkey
 
 Moocode:
   type: programming
@@ -2197,6 +2251,7 @@ MoonScript:
   interpreters:
   - moon
   ace_mode: text
+  tm_scope: source.moonscript
 
 Myghty:
   type: programming
@@ -2226,6 +2281,7 @@ NSIS:
   - .nsi
   - .nsh
   ace_mode: text
+  tm_scope: source.nsis
 
 Nemerle:
   type: programming
@@ -2233,6 +2289,7 @@ Nemerle:
   extensions:
   - .n
   ace_mode: text
+  tm_scope: source.nemerle
 
 NetLinx:
   type: programming
@@ -2418,6 +2475,7 @@ Opa:
   extensions:
   - .opa
   ace_mode: text
+  tm_scope: source.opa
 
 Opal:
   type: programming
@@ -2601,6 +2659,7 @@ Pascal:
   - .lpr
   - .pp
   ace_mode: pascal
+  tm_scope: source.pascal
 
 Perl:
   type: programming
@@ -2678,6 +2737,7 @@ Pike:
   interpreters:
   - pike
   ace_mode: text
+  tm_scope: source.pike
 
 Pod:
   type: prose
@@ -2721,6 +2781,7 @@ PowerShell:
   - .ps1
   - .psd1
   - .psm1
+  tm_scope: source.powershell
 
 Processing:
   type: programming
@@ -2728,6 +2789,7 @@ Processing:
   extensions:
   - .pde
   ace_mode: text
+  tm_scope: source.processing
 
 Prolog:
   type: programming
@@ -2775,6 +2837,7 @@ Puppet:
   filenames:
   - Modulefile
   ace_mode: text
+  tm_scope: source.puppet
 
 Pure Data:
   type: programming
@@ -2830,6 +2893,7 @@ Python:
   - python3
   aliases:
   - rusthon
+  tm_scope: source.python
 
 Python traceback:
   type: data
@@ -2857,6 +2921,7 @@ QMake:
   interpreters:
   - qmake
   ace_mode: text
+  tm_scope: source.qmake
 
 R:
   type: programming
@@ -2874,6 +2939,7 @@ R:
   interpreters:
   - Rscript
   ace_mode: r
+  tm_scope: source.r
 
 RAML:
   type: markup
@@ -3075,6 +3141,7 @@ Ruby:
   - Thorfile
   - Vagrantfile
   - buildfile
+  tm_scope: source.ruby
 
 Rust:
   type: programming
@@ -3082,6 +3149,7 @@ Rust:
   extensions:
   - .rs
   ace_mode: rust
+  tm_scope: source.rust
 
 SAS:
   type: programming
@@ -3211,6 +3279,7 @@ Scala:
   - .sc
   interpreters:
   - scala
+  tm_scope: source.scala
 
 Scaml:
   group: HTML
@@ -3234,6 +3303,7 @@ Scheme:
   - bigloo
   - chicken
   ace_mode: scheme
+  tm_scope: source.scheme
 
 Scilab:
   type: programming
@@ -3242,6 +3312,7 @@ Scilab:
   - .sce
   - .tst
   ace_mode: text
+  tm_scope: source.scilab
 
 Self:
   type: programming
@@ -3276,6 +3347,7 @@ Shell:
   - sh
   - zsh
   ace_mode: sh
+  tm_scope: source.shell
 
 ShellSession:
   type: programming
@@ -3328,6 +3400,7 @@ Smalltalk:
   aliases:
   - squeak
   ace_mode: text
+  tm_scope: source.smalltalk
 
 Smarty:
   type: programming
@@ -3388,6 +3461,7 @@ Stata:
   - .matah
   - .sthlp
   ace_mode: text
+  tm_scope: source.stata
 
 Stylus:
   type: markup
@@ -3415,6 +3489,7 @@ Swift:
   extensions:
   - .swift
   ace_mode: text
+  tm_scope: source.swift
 
 SystemVerilog:
   type: programming
@@ -3424,6 +3499,7 @@ SystemVerilog:
   - .svh
   - .vh
   ace_mode: verilog
+  tm_scope: source.systemverilog
 
 TOML:
   type: data
@@ -3450,6 +3526,7 @@ Tcl:
   - tclsh
   - wish
   ace_mode: tcl
+  tm_scope: source.tcl
 
 Tcsh:
   type: programming
@@ -3483,6 +3560,7 @@ TeX:
   - .mkvi
   - .sty
   - .toc
+  tm_scope: text.tex
 
 Tea:
   type: markup
@@ -3615,6 +3693,7 @@ VHDL:
   - .vht
   - .vhw
   ace_mode: vhdl
+  tm_scope: source.vhdl
 
 Vala:
   type: programming
@@ -3623,6 +3702,7 @@ Vala:
   - .vala
   - .vapi
   ace_mode: vala
+  tm_scope: source.vala
 
 Verilog:
   type: programming
@@ -3631,6 +3711,7 @@ Verilog:
   - .v
   - .veo
   ace_mode: verilog
+  tm_scope: source.verilog
 
 VimL:
   type: programming
@@ -3649,6 +3730,7 @@ VimL:
   - nvimrc
   - vimrc
   ace_mode: text
+  tm_scope: source.viml
 
 Visual Basic:
   type: programming
@@ -3808,6 +3890,7 @@ XML:
   - Web.Release.config
   - Web.config
   - packages.config
+  tm_scope: text.xml
 
 XPages:
   type: programming
@@ -3871,6 +3954,7 @@ Xtend:
   extensions:
   - .xtend
   ace_mode: text
+  tm_scope: source.xtend
 
 YAML:
   type: data
@@ -3951,6 +4035,7 @@ mupad:
   extensions:
   - .mu
   ace_mode: text
+  tm_scope: source.mupad
 
 nesC:
   type: programming
@@ -3958,6 +4043,7 @@ nesC:
   extensions:
   - .nc
   ace_mode: text
+  tm_scope: source.nesc
 
 ooc:
   type: programming
@@ -3965,6 +4051,7 @@ ooc:
   extensions:
   - .ooc
   ace_mode: text
+  tm_scope: source.ooc
 
 reStructuredText:
   type: prose
@@ -3978,6 +4065,7 @@ reStructuredText:
   - .rest.txt
   - .rst.txt
   ace_mode: text
+  tm_scope: text.restructuredtext
 
 wisp:
   type: programming
