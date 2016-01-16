@@ -11,6 +11,8 @@ rvm:
   - 2.1
   - 2.2
   - jruby-19mode
+env:
+  - JRUBY_OPTS=-Xcext.enabled=true  
 notifications:
   disabled: true
 git:
