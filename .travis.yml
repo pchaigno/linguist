@@ -12,7 +12,7 @@ rvm:
   - 2.2
   - jruby-19mode
 env:
-  - JRUBY_OPTS=--2.0
+  - JRUBY_OPTS='--2.0'
 notifications:
   disabled: true
 git:
