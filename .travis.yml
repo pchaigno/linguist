@@ -10,7 +10,10 @@ rvm:
   - 2.0.0
   - 2.1
   - 2.2
+  - jruby-19mode
   - jruby-20mode
+  - jruby-21mode
+  - jruby-22mode
 notifications:
   disabled: true
 git:
