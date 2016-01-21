@@ -377,6 +377,15 @@ class TestLanguage < Minitest::Test
     assert missing.empty?, message
   end
 
+  def test_displayed_languages_have_color
+    missing = Language.all.select { |language| language.color.nil? && language.group.name != language.name && (language.type == :programming || language.type == :markup) }
+    message = "The following languages do not have a color listed in grammars.yml. Please add colors for all new programming or markup languages without a parent language.\n"
+
+    width = missing.map { |language| language.name.length }.max
+    message << missing.map { |language| sprintf("%-#{width}s", language.name) }.sort.join("\n")
+    assert missing.empty?, message
+  end
+
   def test_all_languages_have_type
     missing = Language.all.select { |language| language.type.nil? }
     message = "The following languages do not have a type listed in grammars.yml. Please add types for all new languages.\n"
