@@ -246,6 +246,7 @@ Augeas:
   - .aug
   tm_scope: none
   ace_mode: text
+  color: "#B8613D"
 
 AutoHotkey:
   type: programming
