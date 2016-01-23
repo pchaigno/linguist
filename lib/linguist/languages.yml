@@ -3965,6 +3965,7 @@ Xojo:
   - .xojo_window
   tm_scope: source.vbnet
   ace_mode: text
+  color: "#6FB331"
 
 Xtend:
   type: programming
