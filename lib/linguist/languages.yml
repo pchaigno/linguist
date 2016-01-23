@@ -686,6 +686,7 @@ Coq:
   - .v
   ace_mode: text
   tm_scope: source.coq
+  color: "#CB9E72"
 
 Cpp-ObjDump:
   type: data
