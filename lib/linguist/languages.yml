@@ -3973,6 +3973,7 @@ Xtend:
   - .xtend
   ace_mode: text
   tm_scope: source.xtend
+  color: "#5D5087"
 
 YAML:
   type: data
