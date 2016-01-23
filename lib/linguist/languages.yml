@@ -2132,6 +2132,7 @@ Mathematica:
   - mma
   ace_mode: text
   tm_scope: source.mathematica
+  color: "#F23443"
 
 Matlab:
   type: programming
