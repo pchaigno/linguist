@@ -2797,6 +2797,7 @@ PowerShell:
   - .psd1
   - .psm1
   tm_scope: source.powershell
+  color: "#4477D1"
 
 Processing:
   type: programming
