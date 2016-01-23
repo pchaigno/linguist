@@ -177,6 +177,7 @@ Apex:
   - .cls
   tm_scope: source.java
   ace_mode: java
+  color: "#988E89"
 
 AppleScript:
   type: programming
