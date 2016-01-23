@@ -378,7 +378,7 @@ class TestLanguage < Minitest::Test
   end
 
   def test_displayed_languages_have_color
-    missing = Language.all.select { |language| language.color.nil? && language.group.name != language.name && (language.type == :programming || language.type == :markup) }
+    missing = Language.all.select { |language| language.color.nil? && language.group.name == language.name && (language.type == :programming || language.type == :markup) }
     message = "The following languages do not have a color listed in grammars.yml. Please add colors for all new programming or markup languages without a parent language.\n"
 
     width = missing.map { |language| language.name.length }.max
