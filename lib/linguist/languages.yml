@@ -3788,6 +3788,8 @@ TypeScript:
   extensions:
   - .ts
   - .tsx
+  interpreters:
+  - node
   tm_scope: source.ts
   ace_mode: typescript
 
