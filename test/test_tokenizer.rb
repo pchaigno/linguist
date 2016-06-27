@@ -95,7 +95,7 @@ class TestTokenizer < Minitest::Test
     assert_equal "SHEBANG#!python", tokenize(:"Python/python")[0]
     assert_equal "SHEBANG#!ruby", tokenize(:"Ruby/ruby")[0]
     assert_equal "SHEBANG#!ruby", tokenize(:"Ruby/ruby2")[0]
-    assert_equal "SHEBANG#!node", tokenize(:"JavaScript/js")[0]
+    assert_equal "SHEBANG#!node", tokenize(:"JavaScript/js2")[0]
     assert_equal "SHEBANG#!php", tokenize(:"PHP/php")[0]
     assert_equal "SHEBANG#!escript", tokenize(:"Erlang/factorial")[0]
     assert_equal "echo", tokenize(:"Shell/invalid-shebang.sh")[0]
