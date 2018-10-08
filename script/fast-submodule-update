@@ -25,7 +25,7 @@ def run_process(*args)
 end
 
 def update_submodule(submodule)
-  output, status = run_process("git", "submodule", "update", "--", submodule)
+  output, status = run_process("git", "submodule", "update", "--depth", "1", "--", submodule)
   TaskResult.new(submodule, output, status)
 end
 
